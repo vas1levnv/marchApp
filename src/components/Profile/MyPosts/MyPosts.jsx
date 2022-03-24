@@ -1,7 +1,8 @@
 import s from './MyPosts.module.css'
 import Post from "./Post/Post";
 
-const MyPosts = () => {
+const MyPosts = (props) => {
+
     return(<div>
             My posts
             <div>
@@ -10,9 +11,8 @@ const MyPosts = () => {
                 <button>Remove</button>
             </div>
             <div className={s.posts}>
-                <Post />
-                <Post />
-                <Post />
+                <Post message='hi how are you?' likeCounts='11'/>
+                <Post message='my first post' likeCounts='11'/>
             </div>
         </div>
     )
