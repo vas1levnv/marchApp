@@ -1,13 +1,25 @@
+import s from './Navbar.module.css'
 
+console.log(s)
 
 const Navbar = () => {
-    return(
-        <nav className='nav'>
-            <a><div>Profile</div></a>
-            <a><div>Messages</div></a>
-            <a><div>News</div></a>
-            <a><div>Music</div></a>
-            <a><div>Settings</div></a>
+    return (
+        <nav className={s.nav}>
+            <div className={s.item}>
+                <a>Profile</a>
+            </div>
+            <div className={`${s.item} ${s.active}`}>
+                <a>Messages</a>
+            </div>
+            <div className={s.item}>
+                <a>News</a>
+            </div>
+            <div className={s.item}>
+                <a>Music</a>
+            </div>
+            <div className={s.item}>
+                <a>Settings</a>
+            </div>
         </nav>
     )
 }
