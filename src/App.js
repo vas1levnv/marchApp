@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import {Route, Routes} from "react-router-dom";
-import Music from "./components/Music/Music";
+import LoginPage from "./components/Login/Login";
 import Settings from "./components/Settings/Settings";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer";
@@ -18,7 +18,7 @@ function App(props) {
                 <Route path='/dialogs' element={<DialogsContainer/>}/>
                 <Route path='/profile/:userId' element={<ProfileContainer/>}/>
                 <Route path='/users' element={<UsersContainer/>}/>
-                <Route path='/music' element={<Music/>}/>
+                <Route path='/login' element={<LoginPage/>}/>
                 <Route path='/settings' element={<Settings/>}/>
                 </Routes>
             </div>
