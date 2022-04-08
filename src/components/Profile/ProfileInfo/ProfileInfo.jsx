@@ -15,7 +15,7 @@ const ProfileInfo = (props) => {
                 <div>
                     <span>Имя: {props.profile.fullName}</span>
                 </div>
-                <ProfileStatus status={'hello'}/>
+                <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
             </div>
 
         </div>
